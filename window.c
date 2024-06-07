@@ -29,7 +29,7 @@ void	my_pixel_put(t_img *img, int x, int y, int color)
 	int	offset;
 
 	//🚨 Line len is in bytes. WIDTH 800 len_line ~3200 (can differ for alignment)
-	offset = (img->line_len * y) + (x * (img->bits_per_pixel / 8));	
+	offset = (img->line_len * y) + (x * (img->bits_per_pixel / 8));
 
 	*((unsigned int *)(offset + img->img_pixels_ptr)) = color;
 }
@@ -39,7 +39,7 @@ void	my_pixel_put(t_img *img, int x, int y, int color)
 */
 void	color_screen(t_mlx_data *data, int color)
 {
-	for (int y = 0; y < SIDE_LEN; ++y)	
+	for (int y = 0; y < SIDE_LEN; ++y)
 	{
 		for (int x = 0; x < SIDE_LEN; ++x)
 		{
@@ -48,8 +48,8 @@ void	color_screen(t_mlx_data *data, int color)
 			 * 	~Buffer in the image and push only when ready-> No flickering effect
 			*/
 			my_pixel_put(&data->img,
-						x, 
-						y, 
+						x,
+						y,
 						color);
 		}
 	}
@@ -62,7 +62,12 @@ void	color_screen(t_mlx_data *data, int color)
 int	color_handle(int keysym, t_mlx_data *data)
 {
 
-	if (keysym == XK_r)
+	if (keysym == XK_r)typedef struct	s_mlx_data
+{
+	void	*mlx_ptr;
+	void	*win_ptr;
+	t_img	img
+}				t_mlx_data;
 	{
         color_screen(data, 0xff0000);
 	}
@@ -73,15 +78,15 @@ int	color_handle(int keysym, t_mlx_data *data)
 	else if (keysym == XK_b)
 	{
 		color_screen(data, 0xff);
-	}	
+	}
 	else if (keysym == XK_Escape)
 		exit(1);
 
 	// push the READY image to window
 	// the last parameters are the offset image-window
 	mlx_put_image_to_window(data->mlx_ptr,
-							data->win_ptr, 
-							data->img.img_ptr, 
+							data->win_ptr,
+							data->img.img_ptr,
 							0, 0);
 
 	return 0;
@@ -124,7 +129,7 @@ int	main()
                                     SIDE_LEN,
                                     SIDE_LEN);
 
-    data.img.img_pixels_ptr = mlx_get_data_addr(data.img.img_ptr, 
+    data.img.img_pixels_ptr = mlx_get_data_addr(data.img.img_ptr,
                                                 &data.img.bits_per_pixel,
                                                 &data.img.line_len,
                                                 &data.img.endian);
@@ -134,9 +139,9 @@ int	main()
 			"endian %d\n", data.img.line_len, SIDE_LEN, data.img.bits_per_pixel, data.img.endian);
 
     //KEY INPUTS
-    mlx_key_hook(data.win_ptr, 
-                color_handle, 
+    mlx_key_hook(data.win_ptr,
+                color_handle,
                 &data);
     //WINDOW LOOP
-	mlx_loop(data.mlx_ptr); 
+	mlx_loop(data.mlx_ptr);
 }
