@@ -26,6 +26,40 @@ typedef struct  s_mlx_data
     t_img   img;
 }               t_mlx_data;
 
+typedef struct s_xpoint
+{
+	int x;
+	int	y;
+	int z;
+}				t_coord;
+
+
+void	brehamn(t_coord source, t_coord destination)
+{
+	t_coord d;
+	t_coord step;
+
+	d->x = ((destination->x) -  (source->x));
+	d->y = ((destination->y) -  (source->y));
+	d->z = ((destination->z) -  (source->z));
+
+	if (destination->x >= source->x)
+		step->x = 1
+	else
+		step->x = -1;
+	if (destination->y >= source->y)
+		step->y = 1
+	else
+		step->y = -1;
+	if (destination->z >= source->z)
+		step->z = 1
+	else
+		step->z = -1;
+
+	if (d->x >= d->y && d->x >= d->z)
+
+}
+
 void	my_pixel_put(t_img *img, int x, int y, int color)
 {
 	int	offset;
