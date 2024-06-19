@@ -26,51 +26,147 @@ typedef struct  s_mlx_data
     t_img   img;
 }               t_mlx_data;
 
-typedef struct s_xpoint
+typedef struct s_coord
 {
 	int x;
 	int	y;
 	int z;
 }				t_coord;
 
+typedef struct s_decis
+{
+	int	decis1;
+	int	decis2;
+}				t_decis;
 
-void	brehamn(t_coord source, t_coord destination)
+void appendpoint(t_coord point, t_coord points[100], int* points_index)
+{
+    points[*points_index] = point;
+    (*points_index)++;
+}
+
+
+t_coord	*bresenhamn(t_coord *source, t_coord *destination, t_coord points[100], int* points_index)
 {
 	t_coord d;
 	t_coord step;
+	t_coord current;
+	t_decis decis;
 
-	d->x = ((destination->x) -  (source->x));
-	d->y = ((destination->y) -  (source->y));
-	d->z = ((destination->z) -  (source->z));
+
+	d.x = ((destination->x) -  (source->x));
+	d.y = ((destination->y) -  (source->y));
+	d.z = ((destination->z) -  (source->z));
 
 	if (destination->x >= source->x)
-		step->x = 1
+		step.x = 1;
 	else
-		step->x = -1;
+		step.x = -1;
 	if (destination->y >= source->y)
-		step->y = 1
+		step.y = 1;
 	else
-		step->y = -1;
+		step.y = -1;
 	if (destination->z >= source->z)
-		step->z = 1
+		step.z = 1;
 	else
-		step->z = -1;
+		step.z = -1;
 
-	if (d->x >= d->y && d->x >= d->z)
+	if (destination->x >= destination->y && destination->x >= destination->z)
+	{
+		decis.decis1 = (2 * destination->y - destination->x);
+		decis.decis2 = (2 * destination->z - destination->x);
+	}
+	else if (destination->y >= destination->x && destination->y >= destination->z)
+	{
+		decis.decis1 = (2 * destination->x - destination->y);
+		decis.decis2 = (2 * destination->z - destination->y);
+	}
+	else
+	{
+		decis.decis1 = (2 * destination->y - destination->z);
+		decis.decis2 = (2 * destination->x - destination->z);
+	}
+    current = *source;
 
+    appendpoint(current, points, points_index);
+
+	if (destination->x >= destination->y && destination->x >= destination->z)
+	{
+		while (current.x != destination->x)
+		{
+			if (decis.decis1 >= 0)
+			{
+				current.y += step.y;
+				decis.decis1 -= 2 * destination->x;
+			}
+			if (decis.decis2 >= 0)
+			{
+				current.z += step.z;
+				decis.decis2 -= 2 * destination->x;
+			}
+			decis.decis1 += 2 * destination->y;
+			decis.decis2 += 2 * destination->z;
+			current.x += step.x;
+			appendpoint(current, points, points_index);
+		}
+	}
+	else if (destination->y >= destination->z && destination->y >= destination->z)
+	{
+		while (current.y != destination->y)
+		{
+			if (decis.decis1 >= 0)
+			{
+				current.x += step.x;
+				decis.decis1 -= 2 * destination->y;
+			}
+			if (decis.decis2 >= 0)
+			{
+				current.z += step.z;
+				decis.decis2 -= 2 * destination->y;
+			}
+			decis.decis1 += 2 * destination->x;
+			decis.decis2 += 2 * destination->z;
+			current.y += step.y;
+			appendpoint(current, points, points_index);
+		}
+	}
+	else
+	{
+		while (current.z != destination->z)
+		{
+			if (decis.decis1 >= 0)
+			{
+				current.y += step.y;
+				decis.decis1 -= 2 * destination->z;
+			}
+			if (decis.decis2 >= 0)
+			{
+				current.x += step.x;
+				decis.decis2 -= 2 * destination->z;
+			}
+			decis.decis1 += 2 * destination->y;
+			decis.decis2 += 2 * destination->x;
+			current.z += step.z;
+			appendpoint(current, points, points_index);
+		}
+	}
+
+	appendpoint(current, points, points_index);
+
+	return points;
 }
 
-void	my_pixel_put(t_img *img, int x, int y, int color)
+void	my_pixel_put(t_mlx_data *data, int x, int y, int color)
 {
 	int	offset;
 
 	//🚨 Line len is in bytes. WIDTH 800 len_line ~3200 (can differ for alignment)
-	offset = (img->line_len * y) + (x * (img->bits_per_pixel / 8));
+	offset = (data->img.line_len * y) + (x * (data->img.bits_per_pixel / 8));
 
-	*((unsigned int *)(offset + img->img_pixels_ptr)) = color;
+	*((unsigned int *)(offset + data->img.img_pixels_ptr)) = color;
 }
 
-void	drawsquare(t_mlx_data *data, int x_pos, int color)
+/* void	drawsquare(t_mlx_data *data, int x_pos, int color)
 {
 	static int count;
 
@@ -85,23 +181,31 @@ void	drawsquare(t_mlx_data *data, int x_pos, int color)
 	}
 	my_pixel_put(&data->img, x_pos * 20, 5, color);
 	my_pixel_put(&data->img, x_pos * 20, 20, color);
-}
+} */
 
-void	drawline(t_mlx_data *data, int x_startpos, int y_startpos, int x_endpos, int y_endpos, int color, int orient)
+void	drawline(t_mlx_data *data, t_coord *source, t_coord *destination, int color, int orient)
 {
-	while (x_startpos < x_endpos && orient == 1)
+	t_coord points[100];
+    int points_index = 0;
+	int i;
+
+	i = 0;
+
+	bresenhamn(source, destination, points, &points_index);
+
+	if (orient == 1)
 	{
-		my_pixel_put(&data->img, x_startpos, y_startpos, color);
-		x_startpos++;
+		while (i++ < points_index)
+			my_pixel_put(data, points[i].x, points[i].y, color);
 	}
-	while (y_startpos < y_endpos && orient == 2)
+	else
 	{
-		my_pixel_put(&data->img, x_startpos, y_startpos, color);
-		y_startpos++;
+		while (i++ < points_index)
+			my_pixel_put(data, points[i].x, points[i].y, color);
 	}
 }
 
-void	drawgrid(t_mlx_data *data, int	width, int height, int color)
+/* void	drawgrid(t_mlx_data *data, int	width, int height, int color)
 {
 	int	i = 0;
 	int scale = width / 20;
@@ -121,7 +225,7 @@ void	drawgrid(t_mlx_data *data, int	width, int height, int color)
 		y_point += 20;
 		i++;
 	}
-}
+} */
 
 int input_handle(int keysym, t_mlx_data *data)
 {
@@ -133,7 +237,7 @@ int input_handle(int keysym, t_mlx_data *data)
         free(data->mlx_ptr);
         exit(1);
     }
-	if (keysym == XK_b)
+	/* if (keysym == XK_b)
     {
         printf("Tecla B pressionada!");
 		drawgrid(data, WIDTH, HEIGHT, 0x0000FF);
@@ -150,7 +254,7 @@ int input_handle(int keysym, t_mlx_data *data)
         printf("Tecla R pressionada!");
 		drawgrid(data, WIDTH, HEIGHT, 0x00FF0000);
 		mlx_put_image_to_window(data->mlx_ptr, data->win_ptr, data->img.img_ptr, 0, 0);
-    }
+    } */
     return (0);
 }
 
@@ -175,6 +279,19 @@ int input_handle(int keysym, t_mlx_data *data)
 int	main()
 {
     t_mlx_data  data;
+	t_coord inicio;
+    t_coord fim;
+
+    inicio.x = 2;
+    inicio.y = 2;
+    inicio.z = 2;
+
+    fim.x = 10;
+    fim.y = 5;
+    fim.z = 7;
+
+    int points_index = 0;
+    t_coord points[100];
 
 	data.mlx_ptr = mlx_init();
 	if (data.mlx_ptr == NULL)
@@ -199,29 +316,9 @@ int	main()
                                                 &data.img.bits_per_pixel,
                                                 &data.img.line_len,
                                                 &data.img.endian);
-/* 	drawsquare(&data, 1, 0x00FF0000);
-	drawsquare(&data, 2, 0x00FF0000);
-	drawsquare(&data, 3, 0x00FF0000);
-	drawsquare(&data, 4, 0x00FF0000);
-	drawsquare(&data, 5, 0x00FF0000);
-	drawsquare(&data, 6, 0x00FF0000);
-	drawsquare(&data, 7, 0x00FF0000);
-	drawsquare(&data, 8, 0x00FF0000);
-	drawsquare(&data, 9, 0x00FF0000);
-	drawsquare(&data, 10, 0x00FF0000);
-	drawsquare(&data, 11, 0x00FF0000);
-	drawsquare(&data, 12, 0x00FF0000);
-	drawsquare(&data, 13, 0x00FF0000);
-	drawsquare(&data, 14, 0x00FF0000);
-	drawsquare(&data, 15, 0x00FF0000);
-	drawsquare(&data, 16, 0x00FF0000);
-	drawsquare(&data, 17, 0x00FF0000);
-	drawsquare(&data, 18, 0x00FF0000);
-	drawsquare(&data, 19, 0x00FF0000);
-	drawsquare(&data, 20, 0x00FF0000); */
-	//drawline(&data, 1, 1, WIDTH, 1, 0x00FF0000);
-	//drawline(&data, 1, (HEIGHT - 1), WIDTH, 1, 0x00FF0000);
-	drawgrid(&data, WIDTH, HEIGHT, 0x00FF0000);
+
+/* 	drawgrid(&data, WIDTH, HEIGHT, 0x00FF0000); */
+	drawline(&data, &inicio, &fim, 0x00FF0000, 1);
 	mlx_put_image_to_window(data.mlx_ptr, data.win_ptr, data.img.img_ptr, 0, 0);
     //KEY INPUTS
     mlx_key_hook(data.win_ptr,
