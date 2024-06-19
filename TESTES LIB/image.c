@@ -39,14 +39,14 @@ typedef struct s_decis
 	int	decis2;
 }				t_decis;
 
-void appendpoint(t_coord point, t_coord points[100], int* points_index)
+void appendpoint(t_coord point, t_coord points[1000], int* points_index)
 {
     points[*points_index] = point;
     (*points_index)++;
 }
 
 
-t_coord	*bresenhamn(t_coord *source, t_coord *destination, t_coord points[100], int* points_index)
+t_coord	*bresenhamn(t_coord *source, t_coord *destination, t_coord points[1000], int* points_index)
 {
 	t_coord d;
 	t_coord step;
@@ -185,7 +185,7 @@ void	my_pixel_put(t_mlx_data *data, int x, int y, int color)
 
 void	drawline(t_mlx_data *data, t_coord *source, t_coord *destination, int color, int orient)
 {
-	t_coord points[100];
+	t_coord points[1000];
     int points_index = 0;
 	int i;
 
@@ -282,16 +282,13 @@ int	main()
 	t_coord inicio;
     t_coord fim;
 
-    inicio.x = 2;
-    inicio.y = 2;
-    inicio.z = 2;
+    inicio.x = 0;
+    inicio.y = 0;
+    inicio.z = 200;
 
-    fim.x = 10;
-    fim.y = 5;
-    fim.z = 7;
-
-    int points_index = 0;
-    t_coord points[100];
+    fim.x = 100;
+    fim.y = 100;
+    fim.z = 101;
 
 	data.mlx_ptr = mlx_init();
 	if (data.mlx_ptr == NULL)
