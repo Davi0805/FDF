@@ -2,12 +2,13 @@
 #include <X11/keysym.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include "Libft/libft.h"
 
-// gcc image.c -Lminilibx-linux -lmlx_Linux -lX11 -lXext
+// gcc image.c -Lminilibx-linux -lmlx_Linux -lX11 -lXext libft.a
 
 #define MALLOC_ERROR	1
-#define WIDTH			1000
-#define HEIGHT			1000
+#define WIDTH			500
+#define HEIGHT			500
 #define SIDE_LEN        (WIDTH + HEIGHT)
 
 typedef struct s_img
@@ -193,15 +194,10 @@ void	drawline(t_mlx_data *data, t_coord *source, t_coord *destination, int color
 
 	bresenhamn(source, destination, points, &points_index);
 
-	if (orient == 1)
+	while (i < points_index)
 	{
-		while (i++ < points_index)
-			my_pixel_put(data, points[i].x, points[i].y, color);
-	}
-	else
-	{
-		while (i++ < points_index)
-			my_pixel_put(data, points[i].x, points[i].y, color);
+		my_pixel_put(data, points[i].x, points[i].y, color);
+		i++;
 	}
 }
 
@@ -282,13 +278,62 @@ int	main()
 	t_coord inicio;
     t_coord fim;
 
-    inicio.x = 0;
-    inicio.y = 0;
-    inicio.z = 200;
+    inicio.x = 1;
 
-    fim.x = 100;
-    fim.y = 100;
-    fim.z = 101;
+    inicio.y = 1;
+
+    inicio.z = 0;
+
+
+    fim.x = 5;
+
+    fim.y = 5;
+
+    fim.z = 0;
+
+char map_string[] = "0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0\n"
+
+                         "0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0\n"
+
+                         "0  0 10 10  0  0 10 10  0  0  0 10 10 10 10 10  0  0  0\n"
+
+                         "0  0 10 10  0  0 10 10  0  0  0  0  0  0  0 10 10  0  0\n"
+
+                         "0  0 10 10  0  0 10 10  0  0  0  0  0  0  0 10 10  0  0\n"
+
+                         "0  0 10 10 10 10 10 10  0  0  0  0 10 10 10 10  0  0  0\n"
+
+                         "0  0  0 10 10 10 10 10  0  0  0 10 10  0  0  0  0  0  0\n"
+
+                         "0  0  0  0  0  0 10 10  0  0  0 10 10  0  0  0  0  0  0\n"
+
+                         "0  0  0  0  0  0 10 10  0  0  0 10 10 10 10 10 10  0  0\n"
+
+                         "0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0\n"
+
+                         "0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0";
+
+
+    char **lines = ft_split(map_string, '\n');
+
+    int map_data[HEIGHT][WIDTH];
+
+
+    for (int y = 0; y < HEIGHT; y++) {
+
+        char **words = ft_split(lines[y], ' ');
+
+        for (int x = 0; x < WIDTH; x++) {
+
+            map_data[y][x] = atoi(words[x]);
+
+            free(words[x]);
+
+        }
+
+        free(words);
+
+    }
 
 	data.mlx_ptr = mlx_init();
 	if (data.mlx_ptr == NULL)

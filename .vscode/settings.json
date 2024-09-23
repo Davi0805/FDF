@@ -1,8 +1,10 @@
 {
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
-        "libft.h": "c"
-    },
+		"libft.h": "c",
+		"stdlib.h": "c",
+		"get_next_line.h": "c"
+	},
 	"editor.tabSize": 4,
 	"editor.insertSpaces": false,
 	"editor.detectIndentation": false,
