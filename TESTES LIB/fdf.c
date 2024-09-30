@@ -65,7 +65,9 @@ char ***parse_map (char *filename, int num_lines)
 {
     int fd;
     int i;
+	char *buffer;
     char ***lines;
+/* 	char **split_buffer; */
 
     lines = (char ***)malloc(sizeof(char **) * num_lines);
     if (!lines)
@@ -84,9 +86,12 @@ char ***parse_map (char *filename, int num_lines)
         return (NULL);
     }
 
+	buffer = get_next_line(fd);
+/* 	split_buffer = ft_split(buffer, ' '); */
     while (i < num_lines)
     {
-        lines[i] = ft_split(get_next_line(fd), ' ');
+        /* lines[i] = split_buffer; */
+		lines[i] = ft_split(buffer, ' ');
         if (!lines[i])
         {
             printf("LOG: ERRO NO SPLIT");
@@ -102,8 +107,13 @@ char ***parse_map (char *filename, int num_lines)
             return (NULL);
         }
         i++;
+		free(buffer);
+/* 		free(split_buffer); */
+		buffer = get_next_line(fd);
+/* 		split_buffer = ft_split(buffer, ' '); */
    }
-
+	free(buffer);
+/* 	free(split_buffer); */
     close(fd);
     return (lines);
 }
@@ -230,8 +240,8 @@ int handle_keysym(int keysym, t_main_data *data)
 		mlx_destroy_window(data->mlx_data.mlx_ptr, data->mlx_data.win_ptr);
 		mlx_destroy_display(data->mlx_data.mlx_ptr);
 		free(data->mlx_data.mlx_ptr);
-		ft_printf("[DEBUG]: %s\n", data->map_data.lines[3][3]);
-		free_lines(&data->map_data);
+		/* ft_printf("[DEBUG]: %s\n", data->map_data.lines[3][3]); */
+		free_lines(&data->map_data); //DESCOBRIR PQ NAO FUNCIONA
 		exit(0);
 	}
 
@@ -245,7 +255,7 @@ int	handle_tab(t_main_data *data)
 	mlx_destroy_window(data->mlx_data.mlx_ptr, data->mlx_data.win_ptr);
 	mlx_destroy_display(data->mlx_data.mlx_ptr);
 	free(data->mlx_data.mlx_ptr);
-	free_lines(&data->map_data);
+	free_lines(&data->map_data); //DESCOBRIR PQ NAO FUNCIONA
 	exit(0);
 }
 
