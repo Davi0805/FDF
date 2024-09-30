@@ -10,5 +10,6 @@
 	"editor.detectIndentation": false,
 	"editor.renderWhitespace": "all",
 	"files.trimTrailingWhitespace": true,
-	"files.insertFinalNewline": true
+	"files.insertFinalNewline": true,
+	"makefile.configureOnOpen": false
 }

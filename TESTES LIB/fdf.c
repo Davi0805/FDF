@@ -3,57 +3,63 @@
 #include <X11/keysym.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "Libft/libft.h"
+#include "Libft/ft_printf.h"
 #include <string.h>
-#include "Libft/get_next_line.h"
+#include "Libft/get_next_line/get_next_line.h"
+#include "data_structs.h"
+#include "fdf_utils.h"
 
 #define MAP_WIDTH 50
 #define MAP_HEIGHT 50
 
-int line_counter (char *filename)
+/* int line_counter (char *filename)
 {
 	int fd;
+	int count;
+
+	count = 0;
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 	{
 		write(1, "ERRO NO FD\n", 12);
 		return (1);
 	}
-	int count = 0;
-	char *line;
 
-	/* printf("Inciando LOOp"); */
+
 	while(get_next_line(fd))
 		count++;
-	/* printf("Linhas: %i", count); */
-/* 	write(1, ft_itoa(count), sizeof(ft_itoa(count)));
-	write(1, "\n", 1); */
+
+	close(fd);
 
 	return (count);
-}
+} */
 
-/* int parse_map (char *filename, int num_lines)
+int line_counter (char *filename)
 {
 	int fd;
-	int i;
-	char ***lines;
+	int count;
+	char *buffer;
 
-	i = 0;
+	count = 0;
 	fd = open(filename, O_RDONLY);
-
 	if (fd == -1)
 	{
-		printf("LOG: ERRO NO FD");
+		write(1, "ERRO NO FD\n", 12);
 		return (1);
 	}
 
-	while (i < num_lines)
+	buffer = get_next_line(fd);
+	while(buffer)
 	{
-		lines[i] = ft_split(get_next_line(fd), ' ');
-		write(1, lines[i], sizeof(lines[i]));
-		i++;
+		count++;
+		free(buffer);
+		buffer = get_next_line(fd);
 	}
-} */
+	free(buffer);
+	close(fd);
+
+	return (count);
+}
 
 char ***parse_map (char *filename, int num_lines)
 {
@@ -61,11 +67,10 @@ char ***parse_map (char *filename, int num_lines)
     int i;
     char ***lines;
 
-    // Allocate memory for lines
     lines = (char ***)malloc(sizeof(char **) * num_lines);
     if (!lines)
     {
-        printf("LOG: ERRO NO MEMORIA");
+        ft_printf("LOG: ERRO NO MEMORIA\n");
         return (NULL);
     }
 
@@ -74,7 +79,7 @@ char ***parse_map (char *filename, int num_lines)
 
     if (fd == -1)
     {
-        printf("LOG: ERRO NO FD");
+        ft_printf("LOG: ERRO NO FD\n");
         free(lines);
         return (NULL);
     }
@@ -85,7 +90,6 @@ char ***parse_map (char *filename, int num_lines)
         if (!lines[i])
         {
             printf("LOG: ERRO NO SPLIT");
-            // Free previously allocated memory
             for (int j = 0; j < i; j++)
             {
                 for (int k = 0; lines[j][k]; k++)
@@ -97,42 +101,12 @@ char ***parse_map (char *filename, int num_lines)
             free(lines);
             return (NULL);
         }
-
-/*         // Print the contents of the strings in lines[i]
-        for (int j = 0; lines[i][j]; j++)
-        {
-            write(1, lines[i][j], strlen(lines[i][j]));
-            write(1, "\n", 1);
-        } */
-
         i++;
-    }
+   }
 
-    // Free allocated memory
-    /* for (int j = 0; j < num_lines; j++)
-    {
-        for (int k = 0; lines[j][k]; k++)
-        {
-            free(lines[j][k]);
-        }
-        free(lines[j]);
-    }
-    free(lines); */
-
+    close(fd);
     return (lines);
 }
-
-typedef struct s_coord {
-    int x;
-    int y;
-    int z;
-}   t_coord;
-
-typedef struct s_mlx_data {
-    void    *mlx_ptr;
-    void    *win_ptr;
-    void    *img_ptr;
-}   t_mlx_data;
 
 void    my_pixel_put(t_mlx_data *data, int x, int y, int color)
 {
@@ -179,6 +153,7 @@ void    drawline_helper(t_mlx_data *data, t_coord *source, t_coord *destination,
     int points_index = 0;
     int i;
 
+	(void)orient;
     i = 0;
 
     bresenhamn(source, destination, points, &points_index);
@@ -218,7 +193,7 @@ void    drawline_helper(t_mlx_data *data, t_coord *source, t_coord *destination,
     }
 } */
 
-void    drawline(t_mlx_data *data, char ***lines)
+/* void    drawline(t_mlx_data *data, char ***lines)
 {
     for (int y = 0; y < MAP_HEIGHT; y++) {
         for (int x = 0; x < MAP_WIDTH; x++) {
@@ -244,30 +219,64 @@ void    drawline(t_mlx_data *data, char ***lines)
             }
         }
     }
+} */
+
+int handle_keysym(int keysym, t_main_data *data)
+{
+	if (keysym == XK_Escape)
+	{
+		ft_printf("\n[Evento]: Tecla ESC pressionada!\n Abortando...\n");
+		mlx_destroy_image(data->mlx_data.mlx_ptr, data->mlx_data.img_ptr);
+		mlx_destroy_window(data->mlx_data.mlx_ptr, data->mlx_data.win_ptr);
+		mlx_destroy_display(data->mlx_data.mlx_ptr);
+		free(data->mlx_data.mlx_ptr);
+		ft_printf("[DEBUG]: %s\n", data->map_data.lines[3][3]);
+		free_lines(&data->map_data);
+		exit(0);
+	}
+
+	return (0);
+}
+
+int	handle_tab(t_main_data *data)
+{
+	ft_printf("\n[EVENTO]: Usuario fechou a janela!");
+	mlx_destroy_image(data->mlx_data.mlx_ptr, data->mlx_data.img_ptr);
+	mlx_destroy_window(data->mlx_data.mlx_ptr, data->mlx_data.win_ptr);
+	mlx_destroy_display(data->mlx_data.mlx_ptr);
+	free(data->mlx_data.mlx_ptr);
+	free_lines(&data->map_data);
+	exit(0);
 }
 
 int main()
 {
-	char ***lines = parse_map("42.fdf", line_counter("42.fdf"));
+	t_main_data data;
 
-	write(1, lines[0][0], ft_strlen(lines[10][0]));
+	data.map_data.lines_count = line_counter("42.fdf");
+	data.map_data.lines = parse_map("42.fdf", data.map_data.lines_count);
+
+	write(1, data.map_data.lines[3][3], ft_strlen(data.map_data.lines[3][3]));
 
 
 
-    t_mlx_data data;
-    data.mlx_ptr = mlx_init();
-	if (data.mlx_ptr == 0)
+    /* t_mlx_data data; */
+    data.mlx_data.mlx_ptr = mlx_init();
+	if (data.mlx_data.mlx_ptr == 0)
 	{
 		printf("Erro ao iniciar!");
 		return (1);
 	}
-    data.win_ptr = mlx_new_window(data.mlx_ptr, MAP_WIDTH * 10, MAP_HEIGHT * 10, "FDF - DMELO-CA");
-    data.img_ptr = mlx_new_image(data.mlx_ptr, MAP_WIDTH * 10, MAP_HEIGHT * 10);
+    data.mlx_data.win_ptr = mlx_new_window(data.mlx_data.mlx_ptr, MAP_WIDTH * 10, MAP_HEIGHT * 10, "FDF - DMELO-CA");
+    data.mlx_data.img_ptr = mlx_new_image(data.mlx_data.mlx_ptr, MAP_WIDTH * 10, MAP_HEIGHT * 10);
+	mlx_hook(data.mlx_data.win_ptr, 2, 1L<<0, handle_keysym, &data);
+	mlx_hook(data.mlx_data.win_ptr, 17, 0, handle_tab, &data);
+	mlx_loop(data.mlx_data.mlx_ptr);
 
-    drawline(&data, lines);
+/*     drawline(&data, lines);
     mlx_put_image_to_window(data.mlx_ptr, data.win_ptr, data.img_ptr, 0, 0);
 
-    mlx_loop(data.mlx_ptr);
+    mlx_loop(data.mlx_ptr); */
 
     return 0;
 }
