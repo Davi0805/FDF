@@ -1,0 +1,1387 @@
+desc: (none)
+cmd: ./FDF
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=466300
+mem_heap_B=43
+mem_heap_extra_B=13
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=475428
+mem_heap_B=142
+mem_heap_extra_B=34
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=488574
+mem_heap_B=143
+mem_heap_extra_B=57
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=496757
+mem_heap_B=115
+mem_heap_extra_B=69
+mem_stacks_B=0
+heap_tree=detailed
+n3: 115 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 58 0x4033F5: ft_get_substr (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n1: 57 0x402D80: before_newline (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n2: 57 0x402FF4: get_next_line (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n1: 57 0x402502: line_counter (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+     n0: 57 0x402ABD: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n1: 1 0x402E8F: after_newline (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n2: 1 0x403005: get_next_line (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n1: 1 0x402502: line_counter (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+     n0: 1 0x402ABD: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 57 0x403261: ft_get_strjoin (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n2: 57 0x402FD1: get_next_line (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n1: 57 0x402502: line_counter (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n0: 57 0x402ABD: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=504435
+mem_heap_B=142
+mem_heap_extra_B=34
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=517582
+mem_heap_B=143
+mem_heap_extra_B=57
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=525765
+mem_heap_B=115
+mem_heap_extra_B=69
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=533443
+mem_heap_B=142
+mem_heap_extra_B=34
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=546590
+mem_heap_B=143
+mem_heap_extra_B=57
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=554773
+mem_heap_B=115
+mem_heap_extra_B=69
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=562451
+mem_heap_B=142
+mem_heap_extra_B=34
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=569574
+mem_heap_B=57
+mem_heap_extra_B=15
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=580312
+mem_heap_B=267
+mem_heap_extra_B=53
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=594129
+mem_heap_B=344
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=603664
+mem_heap_B=344
+mem_heap_extra_B=64
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=614324
+mem_heap_B=384
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=620521
+mem_heap_B=490
+mem_heap_extra_B=86
+mem_stacks_B=0
+heap_tree=detailed
+n4: 490 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 320 0x404743: ft_split (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n1: 320 0x4025EB: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 320 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 96 0x402550: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n0: 96 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n2: 72 0x4033F5: ft_get_substr (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n1: 57 0x402D80: before_newline (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n2: 57 0x402FF4: get_next_line (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n1: 57 0x4026C9: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+     n0: 57 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n0: 0 in 3 places, all below massif's threshold (1.00%)
+  n1: 15 0x402E8F: after_newline (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n2: 15 0x403005: get_next_line (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n1: 15 0x4026C9: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+     n0: 15 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n0: 2 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=18
+#-----------
+time=628515
+mem_heap_B=490
+mem_heap_extra_B=86
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=641939
+mem_heap_B=530
+mem_heap_extra_B=54
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=651755
+mem_heap_B=635
+mem_heap_extra_B=85
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=658443
+mem_heap_B=636
+mem_heap_extra_B=84
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=671981
+mem_heap_B=718
+mem_heap_extra_B=66
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=682850
+mem_heap_B=824
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=689531
+mem_heap_B=824
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=701130
+mem_heap_B=864
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=711467
+mem_heap_B=970
+mem_heap_extra_B=110
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=718148
+mem_heap_B=970
+mem_heap_extra_B=110
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=728949
+mem_heap_B=1010
+mem_heap_extra_B=78
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=738766
+mem_heap_B=1116
+mem_heap_extra_B=108
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=745520
+mem_heap_B=1115
+mem_heap_extra_B=109
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=753957
+mem_heap_B=1227
+mem_heap_extra_B=101
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=762659
+mem_heap_B=1227
+mem_heap_extra_B=101
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=775729
+mem_heap_B=1304
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=782433
+mem_heap_B=1302
+mem_heap_extra_B=90
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=791506
+mem_heap_B=1359
+mem_heap_extra_B=121
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=801479
+mem_heap_B=1451
+mem_heap_extra_B=133
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=808548
+mem_heap_B=1450
+mem_heap_extra_B=134
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=818921
+mem_heap_B=1491
+mem_heap_extra_B=141
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=828703
+mem_heap_B=1596
+mem_heap_extra_B=132
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=840899
+mem_heap_B=1707
+mem_heap_extra_B=125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=849601
+mem_heap_B=1707
+mem_heap_extra_B=125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=859747
+mem_heap_B=1784
+mem_heap_extra_B=136
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=866703
+mem_heap_B=1784
+mem_heap_extra_B=136
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=877272
+mem_heap_B=1811
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=887055
+mem_heap_B=1915
+mem_heap_extra_B=149
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=894011
+mem_heap_B=1915
+mem_heap_extra_B=149
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=901495
+mem_heap_B=6699
+mem_heap_extra_B=141
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=908314
+mem_heap_B=6812
+mem_heap_extra_B=172
+mem_stacks_B=0
+heap_tree=detailed
+n6: 6812 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4704 0x4896B31: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 4704 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 4704 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 1760 0x404743: ft_split (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n1: 1760 0x4025EB: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 1760 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 136 0x40364F: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n0: 136 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 112 0x48A6D72: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 112 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+   n1: 112 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n0: 112 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 96 0x402550: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n0: 96 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n0: 4 in 8 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=921720
+mem_heap_B=7408
+mem_heap_extra_B=200
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=926531
+mem_heap_B=11622
+mem_heap_extra_B=290
+mem_stacks_B=0
+heap_tree=detailed
+n7: 11622 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4704 0x4896B31: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 4704 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 4704 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 4096 0x4A3ABA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4A49CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4A474C3: _IO_file_xsgetn (fileops.c:1287)
+    n1: 4096 0x4A3BBA8: fread (iofread.c:38)
+     n1: 4096 0x4C12A83: XauReadAuth (in /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0)
+      n1: 4096 0x4C12E11: XauGetBestAuthByAddr (in /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0)
+       n1: 4096 0x4BF4AB1: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+        n1: 4096 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+         n1: 4096 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+          n1: 4096 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+           n0: 4096 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 1760 0x404743: ft_split (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n1: 1760 0x4025EB: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 1760 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 472 0x4A3B64D: __fopen_internal (iofopen.c:65)
+  n1: 472 0x4A3B64D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x4C12DCC: XauGetBestAuthByAddr (in /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0)
+    n1: 472 0x4BF4AB1: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+     n1: 472 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+      n1: 472 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+       n1: 472 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+        n0: 472 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n0: 330 in 13 places, all below massif's threshold (1.00%)
+ n1: 136 0x40364F: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n0: 136 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 124 0x4BF0A64: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 124 0x4BF4865: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 124 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 124 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 124 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 124 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+#-----------
+snapshot=51
+#-----------
+time=932830
+mem_heap_B=11524
+mem_heap_extra_B=252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=939155
+mem_heap_B=11557
+mem_heap_extra_B=283
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=945544
+mem_heap_B=11522
+mem_heap_extra_B=230
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=951959
+mem_heap_B=11541
+mem_heap_extra_B=275
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=958200
+mem_heap_B=11621
+mem_heap_extra_B=291
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=964454
+mem_heap_B=11523
+mem_heap_extra_B=229
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=970779
+mem_heap_B=11542
+mem_heap_extra_B=274
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=977004
+mem_heap_B=11603
+mem_heap_extra_B=269
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=983518
+mem_heap_B=11523
+mem_heap_extra_B=253
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=989933
+mem_heap_B=11557
+mem_heap_extra_B=283
+mem_stacks_B=0
+heap_tree=detailed
+n7: 11557 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4704 0x4896B31: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 4704 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 4704 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 4096 0x4A3ABA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4A49CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4A474C3: _IO_file_xsgetn (fileops.c:1287)
+    n1: 4096 0x4A3BBA8: fread (iofread.c:38)
+     n1: 4096 0x4C12A83: XauReadAuth (in /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0)
+      n1: 4096 0x4C12E11: XauGetBestAuthByAddr (in /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0)
+       n1: 4096 0x4BF4AB1: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+        n1: 4096 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+         n1: 4096 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+          n1: 4096 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+           n0: 4096 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 1760 0x404743: ft_split (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n1: 1760 0x4025EB: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 1760 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 472 0x4A3B64D: __fopen_internal (iofopen.c:65)
+  n1: 472 0x4A3B64D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x4C12DCC: XauGetBestAuthByAddr (in /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0)
+    n1: 472 0x4BF4AB1: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+     n1: 472 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+      n1: 472 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+       n1: 472 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+        n0: 472 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n0: 265 in 13 places, all below massif's threshold (1.00%)
+ n1: 136 0x40364F: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n0: 136 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 124 0x4BF0A64: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 124 0x4BF4865: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 124 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 124 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 124 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 124 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+#-----------
+snapshot=61
+#-----------
+time=996341
+mem_heap_B=11674
+mem_heap_extra_B=366
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=996688
+mem_heap_B=11738
+mem_heap_extra_B=374
+mem_stacks_B=0
+heap_tree=detailed
+n8: 11738 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4704 0x4896B31: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 4704 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 4704 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 4096 0x4A3ABA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 4096 0x4A49CDF: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4A474C3: _IO_file_xsgetn (fileops.c:1287)
+    n1: 4096 0x4A3BBA8: fread (iofread.c:38)
+     n1: 4096 0x4C12A83: XauReadAuth (in /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0)
+      n1: 4096 0x4C12E11: XauGetBestAuthByAddr (in /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0)
+       n1: 4096 0x4BF4AB1: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+        n1: 4096 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+         n1: 4096 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+          n1: 4096 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+           n0: 4096 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 1760 0x404743: ft_split (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n1: 1760 0x4025EB: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 1760 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 472 0x4A3B64D: __fopen_internal (iofopen.c:65)
+  n1: 472 0x4A3B64D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x4C12DCC: XauGetBestAuthByAddr (in /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0)
+    n1: 472 0x4BF4AB1: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+     n1: 472 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+      n1: 472 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+       n1: 472 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+        n0: 472 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n0: 318 in 12 places, all below massif's threshold (1.00%)
+ n1: 136 0x40364F: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n0: 136 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 128 0x4C12B0F: XauReadAuth (in /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0)
+  n0: 128 in 2 places, all below massif's threshold (1.00%)
+ n1: 124 0x4BF0A64: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 124 0x4BF4865: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 124 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 124 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 124 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 124 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+#-----------
+snapshot=63
+#-----------
+time=1003492
+mem_heap_B=28014
+mem_heap_extra_B=210
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=1012957
+mem_heap_B=28038
+mem_heap_extra_B=250
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=1015890
+mem_heap_B=42642
+mem_heap_extra_B=254
+mem_stacks_B=0
+heap_tree=detailed
+n5: 42642 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 21168 0x4BF4204: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 21168 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 21168 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 21168 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 21168 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 21168 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 14612 0x4BF44FB: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 14612 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 14612 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 14612 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 14612 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 14612 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 4704 0x4896B31: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 4704 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 4704 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 1760 0x404743: ft_split (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n1: 1760 0x4025EB: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 1760 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n0: 398 in 21 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=66
+#-----------
+time=1022244
+mem_heap_B=59127
+mem_heap_extra_B=241
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=1039206
+mem_heap_B=93228
+mem_heap_extra_B=324
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=1045003
+mem_heap_B=93340
+mem_heap_extra_B=356
+mem_stacks_B=0
+heap_tree=detailed
+n7: 93340 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 33600 0x4897290: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 33600 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 33600 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 21168 0x4BF4204: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 21168 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 21168 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 21168 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 21168 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 21168 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 16384 0x4896EBE: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 16384 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 16384 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 14612 0x4BF44FB: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 14612 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 14612 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 14612 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 14612 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 14612 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 4704 0x4896B31: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 4704 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 4704 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 1760 0x404743: ft_split (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n1: 1760 0x4025EB: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 1760 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n0: 1112 in 33 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=69
+#-----------
+time=1054803
+mem_heap_B=93508
+mem_heap_extra_B=372
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=1061234
+mem_heap_B=93801
+mem_heap_extra_B=415
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=1067933
+mem_heap_B=94451
+mem_heap_extra_B=445
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=1069167
+mem_heap_B=94499
+mem_heap_extra_B=461
+mem_stacks_B=0
+heap_tree=detailed
+n7: 94499 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 33600 0x4897290: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 33600 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 33600 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 21168 0x4BF4204: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 21168 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 21168 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 21168 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 21168 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 21168 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 16384 0x4896EBE: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 16384 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 16384 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 14612 0x4BF44FB: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 14612 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 14612 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 14612 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 14612 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 14612 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 4704 0x4896B31: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 4704 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 4704 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n0: 2271 in 39 places, all below massif's threshold (1.00%)
+ n1: 1760 0x404743: ft_split (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n1: 1760 0x4025EB: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 1760 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+#-----------
+snapshot=73
+#-----------
+time=1075645
+mem_heap_B=94521
+mem_heap_extra_B=471
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=1081990
+mem_heap_B=94681
+mem_heap_extra_B=527
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=1088249
+mem_heap_B=95097
+mem_heap_extra_B=583
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=1095526
+mem_heap_B=95129
+mem_heap_extra_B=631
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=1102720
+mem_heap_B=96065
+mem_heap_extra_B=647
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=1103954
+mem_heap_B=96113
+mem_heap_extra_B=663
+mem_stacks_B=0
+heap_tree=detailed
+n7: 96113 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 33600 0x4897290: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 33600 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 33600 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 21168 0x4BF4204: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 21168 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 21168 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 21168 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 21168 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 21168 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 16384 0x4896EBE: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 16384 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 16384 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 14612 0x4BF44FB: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 14612 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 14612 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 14612 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 14612 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 14612 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 4704 0x4896B31: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 4704 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 4704 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n0: 3885 in 46 places, all below massif's threshold (1.00%)
+ n1: 1760 0x404743: ft_split (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n1: 1760 0x4025EB: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 1760 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+#-----------
+snapshot=79
+#-----------
+time=1112918
+mem_heap_B=96237
+mem_heap_extra_B=659
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=1117179
+mem_heap_B=97097
+mem_heap_extra_B=719
+mem_stacks_B=0
+heap_tree=detailed
+n7: 97097 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 33600 0x4897290: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 33600 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 33600 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 21168 0x4BF4204: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 21168 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 21168 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 21168 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 21168 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 21168 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 16384 0x4896EBE: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 16384 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 16384 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 14612 0x4BF44FB: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 14612 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 14612 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 14612 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 14612 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 14612 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n0: 4869 in 48 places, all below massif's threshold (1.00%)
+ n1: 4704 0x4896B31: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 4704 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 4704 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 1760 0x404743: ft_split (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n1: 1760 0x4025EB: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 1760 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+#-----------
+snapshot=81
+#-----------
+time=1121157
+mem_heap_B=98085
+mem_heap_extra_B=715
+mem_stacks_B=0
+heap_tree=detailed
+n8: 98085 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 33600 0x4897290: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 33600 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 33600 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 21168 0x4BF4204: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 21168 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 21168 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 21168 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 21168 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 21168 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 16384 0x4896EBE: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 16384 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 16384 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 14612 0x4BF44FB: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 14612 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 14612 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 14612 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 14612 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 14612 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 4704 0x4896B31: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 4704 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 4704 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n0: 3985 in 47 places, all below massif's threshold (1.00%)
+ n1: 1872 0x48A8FAE: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n2: 1872 0x48ABBB6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+   n1: 1456 0x48ACF01: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n0: 1456 in 2 places, all below massif's threshold (1.00%)
+   n0: 416 in 1 place, below massif's threshold (1.00%)
+ n1: 1760 0x404743: ft_split (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n1: 1760 0x4025EB: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 1760 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+#-----------
+snapshot=82
+#-----------
+time=1126723
+mem_heap_B=99125
+mem_heap_extra_B=771
+mem_stacks_B=0
+heap_tree=detailed
+n8: 99125 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 33600 0x4897290: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 33600 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 33600 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 21168 0x4BF4204: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 21168 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 21168 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 21168 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 21168 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 21168 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 16384 0x4896EBE: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 16384 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 16384 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 14612 0x4BF44FB: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 14612 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 14612 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 14612 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 14612 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 14612 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 4704 0x4896B31: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 4704 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 4704 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n0: 3985 in 47 places, all below massif's threshold (1.00%)
+ n1: 2912 0x48A8FAE: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n2: 2912 0x48ABBB6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+   n2: 1872 0x48ACF01: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 1040 0x48AD1D0: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 1040 0x403B95: mlx_int_wait_first_expose (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n1: 1040 0x4038DD: mlx_new_window (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+       n0: 1040 0x402B53: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n0: 832 in 1 place, below massif's threshold (1.00%)
+   n1: 1040 0x48ACEC0: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n0: 1040 in 2 places, all below massif's threshold (1.00%)
+ n1: 1760 0x404743: ft_split (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n1: 1760 0x4025EB: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 1760 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+#-----------
+snapshot=83
+#-----------
+time=1131364
+mem_heap_B=100061
+mem_heap_extra_B=859
+mem_stacks_B=0
+heap_tree=detailed
+n8: 100061 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 33600 0x4897290: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 33600 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 33600 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 21168 0x4BF4204: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 21168 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 21168 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 21168 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 21168 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 21168 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 16384 0x4896EBE: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 16384 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 16384 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 14612 0x4BF44FB: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 14612 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 14612 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 14612 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 14612 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 14612 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 4704 0x4896B31: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 4704 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 4704 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n0: 4089 in 47 places, all below massif's threshold (1.00%)
+ n1: 3744 0x48A8FAE: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n2: 3744 0x48ABBB6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+   n2: 2288 0x48ACF01: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 1456 0x48AD1D0: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 1456 0x403B95: mlx_int_wait_first_expose (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n1: 1456 0x4038DD: mlx_new_window (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+       n0: 1456 0x402B53: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n0: 832 in 1 place, below massif's threshold (1.00%)
+   n2: 1456 0x48ACEC0: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 1248 0x48AD1D0: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 1248 0x403B95: mlx_int_wait_first_expose (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n1: 1248 0x4038DD: mlx_new_window (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+       n0: 1248 0x402B53: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n0: 208 in 1 place, below massif's threshold (1.00%)
+ n1: 1760 0x404743: ft_split (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n1: 1760 0x4025EB: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 1760 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+#-----------
+snapshot=84
+#-----------
+time=1145153
+mem_heap_B=101001
+mem_heap_extra_B=879
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=85
+#-----------
+time=1145932
+mem_heap_B=101049
+mem_heap_extra_B=895
+mem_stacks_B=0
+heap_tree=detailed
+n8: 101049 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 33600 0x4897290: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 33600 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 33600 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 21168 0x4BF4204: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 21168 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 21168 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 21168 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 21168 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 21168 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 16384 0x4896EBE: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 16384 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 16384 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 14612 0x4BF44FB: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 14612 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 14612 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 14612 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 14612 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 14612 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 4704 0x4896B31: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 4704 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 4704 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 4576 0x48A8FAE: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n2: 4576 0x48ABBB6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+   n2: 3120 0x48ACF01: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 2288 0x48AD1D0: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 2288 0x403B95: mlx_int_wait_first_expose (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n1: 2288 0x4038DD: mlx_new_window (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+       n0: 2288 0x402B53: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n0: 832 in 1 place, below massif's threshold (1.00%)
+   n2: 1456 0x48ACEC0: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 1248 0x48AD1D0: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 1248 0x403B95: mlx_int_wait_first_expose (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n1: 1248 0x4038DD: mlx_new_window (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+       n0: 1248 0x402B53: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n0: 208 in 1 place, below massif's threshold (1.00%)
+ n0: 4245 in 49 places, all below massif's threshold (1.00%)
+ n1: 1760 0x404743: ft_split (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n1: 1760 0x4025EB: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 1760 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+#-----------
+snapshot=86
+#-----------
+time=1157524
+mem_heap_B=101037
+mem_heap_extra_B=899
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=87
+#-----------
+time=1161804
+mem_heap_B=108445
+mem_heap_extra_B=939
+mem_stacks_B=0
+heap_tree=detailed
+n9: 108445 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 33600 0x4897290: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 33600 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 33600 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 21168 0x4BF4204: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 21168 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 21168 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 21168 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 21168 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 21168 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 16384 0x4896EBE: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 16384 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 16384 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 14612 0x4BF44FB: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 14612 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 14612 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 14612 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 14612 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 14612 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n2: 7340 0x4BF11B7: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n2: 7340 0x4BF1A08: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n2: 7340 0x4BF1EB0: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+    n1: 7308 0x4BF2EA5: xcb_wait_for_reply64 (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+     n2: 7308 0x48AD31B: _XReply (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+      n1: 7308 0x48F540A: XkbGetUpdatedMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+       n1: 7308 0x48F54F4: XkbGetMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+        n1: 7308 0x48F5542: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+         n1: 7308 0x48F58AF: XkbKeycodeToKeysym (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+          n1: 7308 0x404267: mlx_int_param_KeyPress (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+           n1: 7308 0x403A65: mlx_loop (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+            n0: 7308 0x402BB3: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 0 in 9 places, all below massif's threshold (1.00%)
+    n0: 32 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4704 0x4896B31: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 4704 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 4704 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 4576 0x48A8FAE: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n2: 4576 0x48ABBB6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+   n2: 3120 0x48ACF01: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 2288 0x48AD1D0: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 2288 0x403B95: mlx_int_wait_first_expose (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n1: 2288 0x4038DD: mlx_new_window (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+       n0: 2288 0x402B53: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n0: 832 in 1 place, below massif's threshold (1.00%)
+   n2: 1456 0x48ACEC0: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 1248 0x48AD1D0: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 1248 0x403B95: mlx_int_wait_first_expose (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n1: 1248 0x4038DD: mlx_new_window (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+       n0: 1248 0x402B53: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n0: 208 in 1 place, below massif's threshold (1.00%)
+ n0: 4301 in 50 places, all below massif's threshold (1.00%)
+ n1: 1760 0x404743: ft_split (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n1: 1760 0x4025EB: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 1760 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+#-----------
+snapshot=88
+#-----------
+time=1163233
+mem_heap_B=115697
+mem_heap_extra_B=935
+mem_stacks_B=0
+heap_tree=detailed
+n10: 115697 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 33600 0x4897290: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 33600 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 33600 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 21168 0x4BF4204: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 21168 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 21168 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 21168 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 21168 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 21168 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 16384 0x4896EBE: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 16384 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 16384 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 14612 0x4BF44FB: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 14612 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 14612 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 14612 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 14612 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 14612 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n2: 7340 0x4BF11B7: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n2: 7340 0x4BF1A08: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n2: 7340 0x4BF1EB0: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+    n1: 7308 0x4BF2EA5: xcb_wait_for_reply64 (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+     n2: 7308 0x48AD31B: _XReply (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+      n1: 7308 0x48F540A: XkbGetUpdatedMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+       n1: 7308 0x48F54F4: XkbGetMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+        n1: 7308 0x48F5542: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+         n1: 7308 0x48F58AF: XkbKeycodeToKeysym (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+          n1: 7308 0x404267: mlx_int_param_KeyPress (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+           n1: 7308 0x403A65: mlx_loop (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+            n0: 7308 0x402BB3: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 0 in 9 places, all below massif's threshold (1.00%)
+    n0: 32 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 7268 0x48FC916: _XkbInitReadBuffer (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 7268 0x48F4460: _XkbReadGetMapReply (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+   n1: 7268 0x48F541E: XkbGetUpdatedMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 7268 0x48F54F4: XkbGetMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 7268 0x48F5542: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+      n1: 7268 0x48F58AF: XkbKeycodeToKeysym (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+       n1: 7268 0x404267: mlx_int_param_KeyPress (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+        n1: 7268 0x403A65: mlx_loop (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+         n0: 7268 0x402BB3: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 4704 0x4896B31: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 4704 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 4704 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 4576 0x48A8FAE: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n2: 4576 0x48ABBB6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+   n2: 3120 0x48ACF01: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 2288 0x48AD1D0: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 2288 0x403B95: mlx_int_wait_first_expose (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n1: 2288 0x4038DD: mlx_new_window (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+       n0: 2288 0x402B53: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n0: 832 in 1 place, below massif's threshold (1.00%)
+   n2: 1456 0x48ACEC0: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 1248 0x48AD1D0: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 1248 0x403B95: mlx_int_wait_first_expose (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n1: 1248 0x4038DD: mlx_new_window (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+       n0: 1248 0x402B53: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n0: 208 in 1 place, below massif's threshold (1.00%)
+ n0: 4285 in 50 places, all below massif's threshold (1.00%)
+ n1: 1760 0x404743: ft_split (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n1: 1760 0x4025EB: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 1760 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+#-----------
+snapshot=89
+#-----------
+time=1169535
+mem_heap_B=111329
+mem_heap_extra_B=1271
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=90
+#-----------
+time=1199208
+mem_heap_B=122365
+mem_heap_extra_B=1451
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=91
+#-----------
+time=1199551
+mem_heap_B=122365
+mem_heap_extra_B=1451
+mem_stacks_B=0
+heap_tree=peak
+n12: 122365 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 33600 0x4897290: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 33600 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 33600 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 21168 0x4BF4204: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 21168 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 21168 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 21168 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 21168 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 21168 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 16384 0x4896EBE: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 16384 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 16384 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 14612 0x4BF44FB: xcb_connect_to_fd (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+  n1: 14612 0x4BF4E6B: xcb_connect_to_display_with_auth_info (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+   n1: 14612 0x48A6EE9: _XConnectXCB (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 14612 0x4896B68: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 14612 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n0: 14612 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 8192 0x48F513E: _XkbReadGetMapReply (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 8192 0x48F541E: XkbGetUpdatedMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+   n1: 8192 0x48F54F4: XkbGetMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 8192 0x48F5542: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 8192 0x48F58AF: XkbKeycodeToKeysym (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+      n1: 8192 0x404267: mlx_int_param_KeyPress (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+       n1: 8192 0x403A65: mlx_loop (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+        n0: 8192 0x402BB3: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 7268 0x48FC916: _XkbInitReadBuffer (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 7268 0x48F4460: _XkbReadGetMapReply (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+   n1: 7268 0x48F541E: XkbGetUpdatedMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 7268 0x48F54F4: XkbGetMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 7268 0x48F5542: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+      n1: 7268 0x48F58AF: XkbKeycodeToKeysym (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+       n1: 7268 0x404267: mlx_int_param_KeyPress (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+        n1: 7268 0x403A65: mlx_loop (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+         n0: 7268 0x402BB3: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n0: 6037 in 54 places, all below massif's threshold (1.00%)
+ n1: 4704 0x4896B31: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 4704 0x403667: mlx_init (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 4704 0x402B0D: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 4576 0x48A8FAE: _XEnq (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n2: 4576 0x48ABBB6: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+   n2: 3120 0x48ACF01: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 2288 0x48AD1D0: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 2288 0x403B95: mlx_int_wait_first_expose (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n1: 2288 0x4038DD: mlx_new_window (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+       n0: 2288 0x402B53: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n0: 832 in 1 place, below massif's threshold (1.00%)
+   n2: 1456 0x48ACEC0: _XReadEvents (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 1248 0x48AD1D0: XWindowEvent (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 1248 0x403B95: mlx_int_wait_first_expose (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+      n1: 1248 0x4038DD: mlx_new_window (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+       n0: 1248 0x402B53: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+    n0: 208 in 1 place, below massif's threshold (1.00%)
+ n1: 2048 0x48F4914: _XkbReadGetMapReply (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 2048 0x48F541E: XkbGetUpdatedMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+   n1: 2048 0x48F54F4: XkbGetMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 2048 0x48F5542: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 2048 0x48F58AF: XkbKeycodeToKeysym (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+      n1: 2048 0x404267: mlx_int_param_KeyPress (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+       n1: 2048 0x403A65: mlx_loop (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+        n0: 2048 0x402BB3: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 2016 0x48F47DD: _XkbReadGetMapReply (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+  n1: 2016 0x48F541E: XkbGetUpdatedMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+   n1: 2016 0x48F54F4: XkbGetMap (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+    n1: 2016 0x48F5542: ??? (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+     n1: 2016 0x48F58AF: XkbKeycodeToKeysym (in /usr/lib/x86_64-linux-gnu/libX11.so.6.4.0)
+      n1: 2016 0x404267: mlx_int_param_KeyPress (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+       n1: 2016 0x403A65: mlx_loop (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+        n0: 2016 0x402BB3: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+ n1: 1760 0x404743: ft_split (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+  n1: 1760 0x4025EB: parse_map (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+   n0: 1760 0x402AE6: main (in /home/dmelo-ca/Documents/FDF/TESTES LIB/FDF)
+#-----------
+snapshot=92
+#-----------
+time=1207188
+mem_heap_B=114713
+mem_heap_extra_B=1391
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=93
+#-----------
+time=1215622
+mem_heap_B=98661
+mem_heap_extra_B=1235
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=94
+#-----------
+time=1226440
+mem_heap_B=29925
+mem_heap_extra_B=507
+mem_stacks_B=0
+heap_tree=empty

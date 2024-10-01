@@ -67,9 +67,9 @@ char ***parse_map (char *filename, int num_lines)
     int i;
 	char *buffer;
     char ***lines;
-/* 	char **split_buffer; */
+/* 	char **split_buffer; //TESTE LEAK FREE */
 
-    lines = (char ***)malloc(sizeof(char **) * num_lines);
+    lines = (char ***)malloc(sizeof(char **) * (num_lines + 1));
     if (!lines)
     {
         ft_printf("LOG: ERRO NO MEMORIA\n");
@@ -87,11 +87,13 @@ char ***parse_map (char *filename, int num_lines)
     }
 
 	buffer = get_next_line(fd);
-/* 	split_buffer = ft_split(buffer, ' '); */
+	ft_printf("[GET NEXT LINE]: %s\n", buffer);
+/* 	split_buffer = ft_split(buffer, ' ');  //TESTE LEAK FREE */
     while (i < num_lines)
     {
-        /* lines[i] = split_buffer; */
+/*         lines[i] = split_buffer; //TESTE LEAK FREE */
 		lines[i] = ft_split(buffer, ' ');
+		ft_printf("[%i - FT_SPLIT]: %s\n", i, lines[i][3]);
         if (!lines[i])
         {
             printf("LOG: ERRO NO SPLIT");
@@ -108,12 +110,13 @@ char ***parse_map (char *filename, int num_lines)
         }
         i++;
 		free(buffer);
-/* 		free(split_buffer); */
+/* 		free(split_buffer); //TESTE LEAK FREE */
 		buffer = get_next_line(fd);
-/* 		split_buffer = ft_split(buffer, ' '); */
+		ft_printf("[GET NEXT LINE]: %s\n", buffer);
+/* 		split_buffer = ft_split(buffer, ' '); //TESTE LEAK FREE */
    }
 	free(buffer);
-/* 	free(split_buffer); */
+/* 	free(split_buffer); //TESTE LEAK FREE */
     close(fd);
     return (lines);
 }
@@ -241,7 +244,8 @@ int handle_keysym(int keysym, t_main_data *data)
 		mlx_destroy_display(data->mlx_data.mlx_ptr);
 		free(data->mlx_data.mlx_ptr);
 		/* ft_printf("[DEBUG]: %s\n", data->map_data.lines[3][3]); */
-		free_lines(&data->map_data); //DESCOBRIR PQ NAO FUNCIONA
+		/* free_lines(&data->map_data); //DESCOBRIR PQ NAO FUNCIONA */
+		free(data->map_data.lines);
 		exit(0);
 	}
 
@@ -255,7 +259,8 @@ int	handle_tab(t_main_data *data)
 	mlx_destroy_window(data->mlx_data.mlx_ptr, data->mlx_data.win_ptr);
 	mlx_destroy_display(data->mlx_data.mlx_ptr);
 	free(data->mlx_data.mlx_ptr);
-	free_lines(&data->map_data); //DESCOBRIR PQ NAO FUNCIONA
+	free(data->map_data.lines);
+	/* free_lines(&data->map_data); //DESCOBRIR PQ NAO FUNCIONA */
 	exit(0);
 }
 
@@ -264,10 +269,13 @@ int main()
 	t_main_data data;
 
 	data.map_data.lines_count = line_counter("42.fdf");
+
+	ft_printf("[DEBUG]: %i\n", data.map_data.lines_count);
+
 	data.map_data.lines = parse_map("42.fdf", data.map_data.lines_count);
 
-	write(1, data.map_data.lines[3][3], ft_strlen(data.map_data.lines[3][3]));
-
+	/* write(1, data.map_data.lines[3][3], ft_strlen(data.map_data.lines[3][3])); */
+	ft_printf("[MAIN]: item %s\n", &data.map_data.lines[0][1]);
 
 
     /* t_mlx_data data; */
